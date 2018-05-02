@@ -1,4 +1,4 @@
 #!/bin/sh
-echo "entrypoinf fromm gitconfig"
-ls /
-/docker-entrypoint.sh
+/git-clone-config.sh
+echo  "args: $@"
+/docker-entrypoint.sh "$@"
